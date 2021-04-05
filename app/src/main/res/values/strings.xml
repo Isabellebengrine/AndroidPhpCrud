@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">androidphpcrud</string>
+    <string name="linkToRegister">Dont\' have an account yet?\nRegister Here</string>
+</resources>

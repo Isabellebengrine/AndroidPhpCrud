@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/eTUserName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="100dp"
+        android:inputType="textPersonName"
+        android:hint="UserName"
+        />
+    <EditText
+        android:id="@+id/eTPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eTUserName"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        />
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eTPassword"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/linkToRegister"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
